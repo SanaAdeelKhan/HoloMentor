@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Node/React
+node_modules/
+dist/
+build/
+
+# Ignore virtual environments
+venv/
+
+# Others
+.vscode/
+.DS_Store
+*.log
