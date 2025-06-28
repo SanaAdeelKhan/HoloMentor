@@ -1,0 +1,14 @@
+from uagents import Protocol
+from uagents.setup import fund_agent_if_low
+from uagents.models import Model
+from uagents import Context
+
+class CodeMessage(Model):
+    code: str
+
+protocol = Protocol(name="code-protocol")
+
+@protocol.on_message(model=CodeMessage)
+async def handle_code(ctx: Context, sender: str, msg: CodeMessage):
+    ctx.logger.info(f"Received code from {sender}: {msg.code}")
+    await ctx.send(sender, CodeMessage(code=f"✅ Explanation: This is a basic C++ program."))

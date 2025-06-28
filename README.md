@@ -1,87 +1,115 @@
-# HoloMentor: The Qubic AI Knowledge Guider
+#**🧠 HoloMentor: The Qubic AI Knowledge Guider**
+An AI-powered holographic mentor that teaches, audits, and helps you interact with decentralized C++ smart contracts on the Qubic Network using agent-based architecture powered by Fetch.ai, Groq, and ASI:One.
 
-> An AI-powered holographic mentor that teaches, audits, and helps you interact with decentralized smart contracts on the Qubic Network.
+#**🌟 What is HoloMentor?**
+HoloMentor is an intelligent, agentic assistant designed to empower developers, auditors, and learners in the blockchain ecosystem.
 
----
+It acts as a sci-fi librarian that enables users to:
 
-## 🧠 What is HoloMentor?
+🔍 Understand C++ smart contract code line-by-line
 
-**HoloMentor** is an agentic educational assistant built to empower developers and learners in the Qubic ecosystem. It acts as a futuristic, conversational AI librarian that helps you:
+🔐 Audit logic for vulnerabilities and risky patterns
 
-- Understand C++ smart contract code
-- Run AI-powered audits and generate test cases
-- Interact with deployed Qubic contracts (using tick-based logic)
-- Register and deploy agents using Fetch.ai's Agentverse
-- Learn visually via a sci-fi holographic user interface
+🧪 Generate test cases with AI assistance
 
----
+🌐 Interact with tick-based Qubic smart contracts
 
-## 🛠️ Key Features
+🤖 Deploy and register agents using Fetch.ai uAgents and ASI:One
 
-| Feature             | Description |
-|---------------------|-------------|
-| 🔍 ExplainAgent     | AI explains C++ smart contracts line-by-line |
-| 🔐 AuditAgent       | AI analyzes contract logic and finds vulnerabilities |
-| 🧪 TestAgent        | AI generates or suggests test cases for contracts |
-| 🌐 Qubic Explorer   | Query tick data, contract balances, explorer data |
-| 🤖 Agentverse Hub   | Agents are registered + discoverable via ASI:One |
-| 🎮 Holo UI          | Sci-fi interface using 3D or glowing visual elements |
+🧬 Get fast reasoning via Groq + LLaMA
 
----
+🪩 Experience it all through a futuristic holographic UI
 
-## 👨‍💻 Tech Stack
+#**🛠️ Core Features**
+**Feature	Description**0
+🧠 ExplainAgent	Explains uploaded Qubic C++ contracts step-by-step using LLaMA (via Groq)
+🛡️ AuditAgent	Analyzes contract logic and identifies common vulnerabilities
+🧪 TestAgent	Suggests or generates unit test cases
+🌐 Agentverse Registry	ASI:One decentralized agent registration and discovery
+📊 Qubic Explorer	Queries tick-based contract states, balances, and metadata
+🎮 Sci-Fi UI	Built using React + TailwindCSS for glowing, holographic effects
 
-| Layer     | Stack                         |
-|-----------|-------------------------------|
-| Frontend  | React + TailwindCSS           |
-| Backend   | Node.js / Python (for agents) |
-| Agents    | ASI:One + uAgents + Agentverse|
-| Smart Contracts | C++ on Qubic Testnet    |
-| Optional  | MCP, Groq, Coral Protocol     |
+#**👨‍💻 Tech Stack**
+Layer	Stack
+Frontend	React, TailwindCSS, Vite
+Backend	FastAPI, Python
+Agents	Fetch.ai uAgents, ASI:One, Agentverse
+AI Models	Groq + LLaMA (primary), OpenAI/Gemini (optional fallback)
+Smart Contracts	C++ on Qubic Testnet
+Optional	MCP, Coral Protocol, Groq Cloud API
 
----
+#**🧠 Example Use Case**
 
-## 📦 Getting Started
+✅ Option 1: Direct via Groq + LLaMA
+The user uploads a contract via the UI.
 
-> Setup instructions will be expanded once MVP is running.
+Backend FastAPI calls Groq’s LLaMA API directly.
 
-### Clone the Repo
-```bash
-git clone https://github.com/your-username/holomentor.git
-cd holomentor
+The explanation is rendered in the UI instantly.
 
+✅ Option 2: ExplainAgent via Fetch.ai (uAgents + ASI:One)
+User uploads a smart contract via the Holo UI.
 
+Frontend sends it to a local TestAgent, which relays it to ExplainAgent.
 
-**Install Dependencies**
-npm install     # for frontend
-# or
-pip install -r requirements.txt  # for agent services
+ExplainAgent, registered on ASI:One and running with uAgents, receives the contract.
 
-**🧪 Deployment Plan**
-We will deploy smart contracts to the Qubic Testnet, and agents will run via the uAgents + ASI:One infrastructure.
+It internally calls the Groq + LLaMA API for explanation.
 
-**Testnet goals:**
+Response is returned via agent messaging and shown in the UI.
 
-✅ Deploy at least 1 working contract (Noor)
-✅ Run ExplainAgent and AuditAgent on real uploaded contracts (Nimra)
-✅ Visualize explanations and results in a 3D/holo-themed UI (Saad)
+✅ Benefits:
+🔗 Connected to ASI:One for decentralized identity
 
-##**👥 Team Green – Qubic Track**
-Name	                  Role
-Sana Adeel	    Team Lead, System Architect
-Saad	          Frontend Lead (UI & UX)
-Nimra	          AI/Agent Developer
-Noor	          Smart Contract Developer
+🛡️ Modular, composable, can trigger AuditAgent or TestAgent in a pipeline
 
-##**🏁 Hackathon Info**
+🤖 Trust-enhancing multi-agent architecture with end-to-end traceability
 
-Track: Qubic Track – RAISE YOUR HACK
-All contracts must be in C++
-All logic must run on the Qubic testnet
-ASI:One / Agentverse integration required
+#**🚀 Getting Started**
 
-**📄 License**
-MIT — open source, free to use and fork
+**📦 Clone the Repo**
 
-“The jungle had owls. The blockchain has mentors.”
-— **Team Green** 🦉🌐
+git clone https://github.com/your-username/HoloMentor.git
+cd HoloMentor
+
+#**🌐 Frontend Setup**
+cd frontend
+npm install
+npm run dev
+
+#**🧠 Agent Setup**
+pip install -r requirements.txt
+
+# Run agents
+python agents/explain_agent.py
+python agents/audit_agent.py
+python agents/test_agent.py
+
+#**✅ Deployment Plan**
+
+**Milestone	Status**
+Deploy C++ contract to Qubic	✅ (Noor)
+Run ExplainAgent via uAgents	✅ (Nimra)
+UI connects to agent layer	✅ (Saad)
+Add agent handoff to AuditAgent	⏳ Planned
+
+#**👥 Team Green – Qubic Track**
+Name	Role
+Sana 	Team Lead, System Architect
+Saad	Frontend Lead (UI/UX, Holo UI Design)
+Noor	Smart Contract Developer (C++ on Qubic)
+Nimra	AI Agent Developer (Explain, Audit Agents)
+Safwan	Embedded Systems & Backend Integrations
+
+#**🏁 Hackathon Info**
+Track: Qubic Track — RAISE YOUR HACK
+
+Platform: ASI:One + Agentverse (Fetch.ai)
+
+Requirement: Agent-based architecture + Qubic testnet + C++ contracts
+
+#**📄 License**
+MIT — free to use, open-source
+
+**“The jungle had owls. The blockchain has mentors.”**
+**— Team Green 🦉🌐**

@@ -1,0 +1,4 @@
+{
+  "input_mode": "code",
+  "user_input": "contract Bank { int balance; void deposit(int amt) { balance += amt; } }"
+}
