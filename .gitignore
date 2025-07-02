@@ -10,6 +10,8 @@ build/
 
 # Ignore virtual environments
 venv/
+src/agents/venv310/
+
 
 # Others
 .vscode/
